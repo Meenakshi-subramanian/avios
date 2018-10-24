@@ -18,7 +18,7 @@ server.use(bodyParser.json());
 //     res.end();
 // });
 
-server.get('/', (req,res) => {
+server.post('/', (req,res) => {
 
 // const movieToSearch = req.body.result && req.body.result.parameters && req.body.result.parameters.movie ? req.body.result.parameters.movie : 'The Godfather';
 const reqUrl = encodeURI("https://s3.ap-south-1.amazonaws.com/avioshack/aviosbalance/7.json");
